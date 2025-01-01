@@ -4,3 +4,4 @@ ln -sf ~/.dotfiles/i3/ ~/.config/i3
 ln -sf ~/.dotfiles/picom/ ~/.config/picom
 ln -sf ~/.dotfiles/polybar ~/.config/polybar
 ln -sf ~/.dotfiles/nixos/ /etc/nixos
+ln -sf ~/.dotfiles/.xprofile ~/.xprofile
