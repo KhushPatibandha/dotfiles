@@ -1,0 +1,15 @@
+gtk-titlebar = false
+
+cursor-style = block
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+theme = Dracula
+
+font-size = 12
+font-family = JetBrainsMono NF ExtraBold
+
+clipboard-read = allow
+clipboard-write = allow
+
+mouse-hide-while-typing = true
