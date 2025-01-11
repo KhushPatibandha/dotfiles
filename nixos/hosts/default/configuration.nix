@@ -171,6 +171,7 @@
 			redshift
 			ifuse
 			usbmuxd
+			libimobiledevice
 			bc
 			pavucontrol
 			dconf
