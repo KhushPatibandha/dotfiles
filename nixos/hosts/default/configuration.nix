@@ -109,6 +109,7 @@
 		home-manager
 
 			tilix
+			ghostty
 
 			vim
 			neovim
@@ -146,7 +147,7 @@
 			brave
 			postman
 			strawberry
-			spotify
+			# spotify
 
 			jdk17
 			python3
@@ -160,7 +161,7 @@
 			fastfetch
 			gimp
 			vlc
-			obs-studio
+			# obs-studio
 			killall
 			fzf
 			btop

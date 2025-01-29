@@ -9,12 +9,9 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-		ghostty = {
-			url = "github:ghostty-org/ghostty";
-		};
 	};
 
-	outputs = { self, nixpkgs, home-manager, ghostty, ... }@inputs: 
+	outputs = { self, nixpkgs, home-manager, ... }@inputs: 
 		let 
 		system = "x86_64-linux";
 	pkgs = nixpkgs.legacyPackages.${system};
@@ -24,12 +21,6 @@
 			specialArgs = {inherit inputs;};
 			modules = [
 				./hosts/default/configuration.nix
-				inputs.home-manager.nixosModules.default
-				{
-					environment.systemPackages = with pkgs; [
-						ghostty.packages.${system}.default
-					];
-				}
 			];
 		};
 	};
