@@ -156,6 +156,7 @@
 # moc
 # cmus
 
+			ollama
 			fastfetch
 			gimp
 			vlc
@@ -181,6 +182,10 @@
 			oh-my-posh
 			appimage-run
 			];
+
+	services.ollama = {
+		enable = true;
+	};
 
 	environment.variables = {
 		RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
