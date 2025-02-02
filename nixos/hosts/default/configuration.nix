@@ -147,7 +147,7 @@
 			brave
 			postman
 			strawberry
-			# spotify
+			spotify
 
 			jdk17
 			python3
