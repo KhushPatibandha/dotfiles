@@ -108,7 +108,6 @@
 	environment.systemPackages = with pkgs; [
 		home-manager
 
-			tilix
 			ghostty
 
 			vim
@@ -157,6 +156,7 @@
 # moc
 # cmus
 
+			direnv
 			ollama
 			fastfetch
 			gimp

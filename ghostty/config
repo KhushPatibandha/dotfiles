@@ -1,4 +1,6 @@
 gtk-titlebar = false
+gtk-adwaita = false
+window-decoration = false
 
 cursor-style = block
 cursor-style-blink = true
