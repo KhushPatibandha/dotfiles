@@ -8,6 +8,7 @@
 	imports =
 		[ # Include the results of the hardware scan.
 		./hardware-configuration.nix
+ 		# ./hardware-acceleration.nix
 			../i3wm/i3.nix
 			inputs.home-manager.nixosModules.default
 		];
@@ -15,6 +16,16 @@
 # Bootloader.
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
+	boot.extraModulePackages = with config.boot.kernelPackages; [
+		v4l2loopback
+	];
+
+	boot.kernelModules = [ "v4l2loopback" ];
+
+	boot.extraModprobeConfig = ''
+		options v4l2loopback devices=1 video_nr=10 card_label="DroidCam" exclusive_caps=1
+		'';
+
 
 	networking.hostName = "nixos"; # Define your hostname.
 # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -133,6 +144,7 @@
 			impl
 			cargo
 			rustc
+			maven
 
 			rust-analyzer
 			lua-language-server
@@ -153,15 +165,17 @@
 			nodejs_20
 			go
 
-# moc
-# cmus
-
+			libreoffice
+			mysql-workbench
+                        gnome-keyring
+			sqlite
+			droidcam
 			direnv
 			ollama
 			fastfetch
 			gimp
 			vlc
-			# obs-studio
+			obs-studio
 			killall
 			fzf
 			btop
@@ -186,6 +200,12 @@
 
 	services.ollama = {
 		enable = true;
+	};
+	services.usbmuxd.enable = true;
+
+	services.mysql = {
+		enable = true;
+		package = pkgs.mariadb;
 	};
 
 	environment.variables = {

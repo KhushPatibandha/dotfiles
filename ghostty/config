@@ -1,12 +1,14 @@
 gtk-titlebar = false
-gtk-adwaita = false
-window-decoration = false
+# gtk-adwaita = false
+# window-decoration = true
 
 cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 
 theme = Dracula
+# theme = GruvboxDarkHard
+# theme = GruvboxLight
 
 font-size = 10
 font-family = JetBrainsMono NF ExtraBold
@@ -15,3 +17,6 @@ clipboard-read = allow
 clipboard-write = allow
 
 mouse-hide-while-typing = true
+
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = false

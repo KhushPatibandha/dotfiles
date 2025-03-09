@@ -8,7 +8,7 @@
 		windowManager.i3 = {
 			package = pkgs.i3-gaps;
 			extraPackages = with pkgs; [
-				maim #screenshot tool
+					maim #screenshot tool
 					xfce.thunar #file manager
 					autotiling #auto tiling
 					rofi #application launche
