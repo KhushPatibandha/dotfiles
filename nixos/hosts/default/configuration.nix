@@ -166,9 +166,9 @@
 			go
 
 			libreoffice
-			mysql-workbench
-                        gnome-keyring
-			sqlite
+			# mysql-workbench
+                        # gnome-keyring
+			# sqlite
 			droidcam
 			direnv
 			ollama

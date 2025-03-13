@@ -6,12 +6,16 @@ cursor-style = block
 cursor-style-blink = true
 shell-integration-features = no-cursor
 
-theme = Dracula
+# theme = Dracula
 # theme = GruvboxDarkHard
 # theme = GruvboxLight
+theme = gruber-darker
 
-font-size = 10
-font-family = JetBrainsMono NF ExtraBold
+
+font-size = 12
+# font-family = JetBrainsMono NF ExtraBold
+font-family = Iosevka Extrabold
+# font-family = Iosevka Heavy
 
 clipboard-read = allow
 clipboard-write = allow
