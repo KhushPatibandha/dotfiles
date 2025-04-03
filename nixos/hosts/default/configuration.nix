@@ -165,6 +165,7 @@
 			nodejs_20
 			go
 
+			flameshot
 			libreoffice
 			# mysql-workbench
                         # gnome-keyring

@@ -45,6 +45,8 @@
 			alias got='go test'
 			alias gor='go run'
 			alias btop='btop --utf-force'
+			bindkey -s '^F' 'fzf\n'
+			bindkey -s '^O' 'fzf | xargs nvim\n'
 			'';
 	};
 
