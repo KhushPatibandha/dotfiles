@@ -126,32 +126,23 @@
 			git
 			gcc
 
-			delve #go debugger
-
-			prettierd
+			# java
 			google-java-format
+
+			# lua
 			stylua
-			mypy			
-			black
-			ruff
-			rustfmt
-			clippy
-			eslint_d
+
+			# go
 			gofumpt
 			goimports-reviser
 			golangci-lint
 			gomodifytags
 			impl
-			cargo
-			rustc
-			maven
 
-			rust-analyzer
+			# LSPs
 			lua-language-server
 			jdt-language-server
 			gopls
-			nodePackages_latest.typescript-language-server
-			pyright
 
 			discord
 			google-chrome
@@ -164,6 +155,7 @@
 			python3
 			nodejs_20
 			go
+			maven
 
 			flameshot
 			libreoffice
@@ -209,10 +201,7 @@
 		package = pkgs.mariadb;
 	};
 
-	environment.variables = {
-		RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
-	};
-
+	programs.nix-ld.enable = true;
 
 	home-manager = {
 		extraSpecialArgs = { inherit inputs;  };
