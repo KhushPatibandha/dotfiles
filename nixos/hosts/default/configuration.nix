@@ -139,10 +139,14 @@
 			gomodifytags
 			impl
 
+			# js-ts
+			eslint_d
+
 			# LSPs
 			lua-language-server
 			jdt-language-server
 			gopls
+			typescript-language-server
 
 			discord
 			google-chrome

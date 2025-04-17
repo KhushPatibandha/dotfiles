@@ -42,6 +42,7 @@
 			alias gitb='git branch'
 			alias gitsth='git stash'
 			alias gitsthp='git stash pop'
+			alias gitd='git diff'
 			alias got='go test'
 			alias gor='go run'
 			alias btop='btop --utf-force'
