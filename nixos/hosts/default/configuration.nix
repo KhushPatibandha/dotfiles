@@ -8,7 +8,7 @@
 	imports =
 		[ # Include the results of the hardware scan.
 		./hardware-configuration.nix
- 		# ./hardware-acceleration.nix
+# ./hardware-acceleration.nix
 			../i3wm/i3.nix
 			inputs.home-manager.nixosModules.default
 		];
@@ -123,26 +123,24 @@
 
 			vim
 			neovim
+			vscode
 			git
 			gcc
 
-			# java
+# java
 			google-java-format
 
-			# lua
+# lua
 			stylua
 
-			# go
+# go
 			gofumpt
 			goimports-reviser
 			golangci-lint
 			gomodifytags
 			impl
 
-			# js-ts
-			eslint_d
-
-			# LSPs
+# LSPs
 			lua-language-server
 			jdt-language-server
 			gopls
@@ -159,13 +157,14 @@
 			python3
 			nodejs_20
 			go
+			typescript
 			maven
 
 			flameshot
 			libreoffice
-			# mysql-workbench
-                        # gnome-keyring
-			# sqlite
+# mysql-workbench
+# gnome-keyring
+# sqlite
 			droidcam
 			direnv
 			ollama
