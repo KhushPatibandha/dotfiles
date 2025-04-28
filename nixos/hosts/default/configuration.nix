@@ -144,7 +144,6 @@
 			lua-language-server
 			jdt-language-server
 			gopls
-			typescript-language-server
 
 			discord
 			google-chrome
@@ -157,9 +156,9 @@
 			python3
 			nodejs_20
 			go
-			typescript
 			maven
 
+			hyperfine
 			flameshot
 			libreoffice
 # mysql-workbench
