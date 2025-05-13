@@ -127,6 +127,11 @@
 			git
 			gcc
 
+# c/cpp
+			clang
+			clang-tools
+			cmake
+
 # java
 			google-java-format
 
@@ -152,6 +157,7 @@
 			strawberry
 			spotify
 
+			php83
 			jdk17
 			python3
 			nodejs_20
@@ -161,8 +167,8 @@
 			hyperfine
 			flameshot
 			libreoffice
-# mysql-workbench
-# gnome-keyring
+			mysql-workbench
+			gnome-keyring
 # sqlite
 			droidcam
 			direnv
