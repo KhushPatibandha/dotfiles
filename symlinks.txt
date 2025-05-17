@@ -6,3 +6,4 @@ ln -sf ~/.dotfiles/polybar ~/.config/polybar
 ln -sf ~/.dotfiles/nixos/ /etc/nixos
 ln -sf ~/.dotfiles/.xprofile ~/.xprofile
 ln -sf ~/.dotfiles/oh-my-posh.omp.json ~/oh-my-posh.omp.json
+ln -sf ~/.dotfiles/screenkey.json ~/.config/screenkey.json

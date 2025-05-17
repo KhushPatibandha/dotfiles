@@ -46,6 +46,7 @@
 	i18n.defaultLocale = "en_IN";
 
 	i18n.extraLocaleSettings = {
+		LANG = "en_US.UTF-8";
 		LC_ADDRESS = "en_IN";
 		LC_IDENTIFICATION = "en_IN";
 		LC_MEASUREMENT = "en_IN";
@@ -165,7 +166,6 @@
 			maven
 
 			screenkey
-
 			hyperfine
 			flameshot
 			libreoffice
