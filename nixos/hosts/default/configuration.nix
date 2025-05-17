@@ -165,7 +165,6 @@
 			go
 			maven
 
-			python312Packages.xlib
 			screenkey
 
 			hyperfine
@@ -204,8 +203,6 @@
 			xorg.xhost
 			xorg.xinput
 			xorg.libX11
-			xorg.libXtst
-			xorg.libXi
 			];
 
 	services.ollama = {
