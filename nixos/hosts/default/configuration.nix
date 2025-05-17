@@ -120,7 +120,6 @@
 		home-manager
 
 			ghostty
-			xterm
 
 			vim
 			neovim
