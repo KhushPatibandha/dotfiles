@@ -20,7 +20,7 @@
 		v4l2loopback
 	];
 
-	boot.kernelModules = [ "v4l2loopback" ];
+	boot.kernelModules = [ "v4l2loopback" "uinput" ];
 
 	boot.extraModprobeConfig = ''
 		options v4l2loopback devices=1 video_nr=10 card_label="DroidCam" exclusive_caps=1
@@ -101,7 +101,7 @@
 	users.users.khush = {
 		isNormalUser = true;
 		description = "Khush Patibandha";
-		extraGroups = [ "networkmanager" "wheel" ];
+		extraGroups = [ "networkmanager" "wheel" "input" ];
 		shell = pkgs.zsh;
 		packages = with pkgs; [
 #  thunderbird
@@ -120,6 +120,7 @@
 		home-manager
 
 			ghostty
+			xterm
 
 			vim
 			neovim
@@ -164,6 +165,9 @@
 			go
 			maven
 
+			python312Packages.xlib
+			screenkey
+
 			hyperfine
 			flameshot
 			libreoffice
@@ -197,6 +201,11 @@
 			font-awesome
 			oh-my-posh
 			appimage-run
+			xorg.xhost
+			xorg.xinput
+			xorg.libX11
+			xorg.libXtst
+			xorg.libXi
 			];
 
 	services.ollama = {

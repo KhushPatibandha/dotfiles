@@ -45,9 +45,14 @@
 			alias gitd='git diff'
 			alias got='go test'
 			alias gor='go run'
-			alias btop='btop --utf-force'
+			alias btop='btop --force-utf'
 			bindkey -s '^F' 'fzf\n'
 			bindkey -s '^O' 'fzf | xargs nvim\n'
+
+			setxkbmap -option caps:ctrl_modifier -option grp:shifts_toggle
+			killall xcape
+			xcape  -e 'Caps_Lock=Escape'
+			source <(fzf --zsh)
 			'';
 	};
 
