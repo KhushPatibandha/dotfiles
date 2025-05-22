@@ -122,6 +122,7 @@
 
 			ghostty
 
+			tmux
 			vim
 			neovim
 			vscode

@@ -5,5 +5,5 @@ ln -sf ~/.dotfiles/picom/ ~/.config/picom
 ln -sf ~/.dotfiles/polybar ~/.config/polybar
 ln -sf ~/.dotfiles/nixos/ /etc/nixos
 ln -sf ~/.dotfiles/.xprofile ~/.xprofile
-ln -sf ~/.dotfiles/oh-my-posh.omp.json ~/oh-my-posh.omp.json
-ln -sf ~/.dotfiles/screenkey.json ~/.config/screenkey.json
+ln -sf ~/.dotfiles/oh-my-posh/oh-my-posh.omp.json ~/oh-my-posh.omp.json
+ln -sf ~/.dotfiles/screenkey/screenkey.json ~/.config/screenkey.json
