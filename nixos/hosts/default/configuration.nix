@@ -157,6 +157,8 @@
 			brave
 			postman
 			strawberry
+			rmpc
+			ncmpcpp
 			spotify
 
 			php83
@@ -166,6 +168,8 @@
 			go
 			maven
 
+			mpc
+			mpd
 			screenkey
 			hyperfine
 			flameshot

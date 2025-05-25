@@ -57,6 +57,43 @@
 			'';
 	};
 
+	services.mpd = {
+		enable = true;
+		musicDirectory = "/home/khush/Music/basicallyMyMusicTaste";
+		playlistDirectory = "/home/khush/Music/basicallyMyMusicTaste";
+		network.listenAddress = "127.0.0.1";
+		network.port = 6600;
+
+		extraConfig = ''
+			db_file                "~/.config/mpd/database.db"
+			log_file               "~/.config/mpd/log"
+			pid_file               "~/.config/mpd/pid"
+			state_file             "~/.config/mpd/state"
+			sticker_file           "~/.config/mpd/sticker.sql"
+
+			auto_update            "yes"
+			follow_outside_symlinks "yes"
+			follow_inside_symlinks  "yes"
+
+			audio_output {
+				type        "alsa"
+				name        "PipeWire ALSA"
+				device      "pipewire"
+				mixer_type  "software"
+			}
+
+			audio_output {
+				type        "pulse"
+				name        "MPD Pulse Output"
+				mixer_type  "software"
+			}
+
+			replaygain             "album"
+			replaygain_preamp      "0"
+			'';
+	};
+
+
 # Let Home Manager install and manage itself.
 	programs.home-manager.enable = true;
 }
