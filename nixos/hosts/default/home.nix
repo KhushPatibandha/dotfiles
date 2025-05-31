@@ -27,8 +27,7 @@
 			plugins = [ "git" "direnv"];
 			theme = "robbyrussell";
 		};
-		initExtra = ''
-# Custom script here
+		initContent = ''
 			eval "$(oh-my-posh init zsh --config ~/oh-my-posh.omp.json)"
 			export EDITOR=nvim
 			alias gits='git status'
@@ -44,6 +43,7 @@
 			alias gitsthp='git stash pop'
 			alias gitd='git diff'
 			alias gitl='git log'
+			alias gitsh='git show'
 			alias got='go test'
 			alias gor='go run'
 			alias btop='btop --force-utf'

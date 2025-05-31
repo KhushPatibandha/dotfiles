@@ -79,7 +79,7 @@
 	hardware.bluetooth.powerOnBoot = true;
 
 # Enable sound with pipewire.
-	hardware.pulseaudio.enable = false;
+	services.pulseaudio.enable = false;
 	security.rtkit.enable = true;
 	services.pipewire = {
 		enable = true;
@@ -125,7 +125,6 @@
 			tmux
 			vim
 			neovim
-			vscode
 			git
 			gcc
 
@@ -160,29 +159,28 @@
 			rmpc
 			ncmpcpp
 			spotify
+# vlc
 
-			php83
 			jdk17
 			python3
 			nodejs_20
 			go
 			maven
 
+# sqlite
+# mysql-workbench
 			mpc
 			mpd
 			screenkey
 			hyperfine
 			flameshot
 			libreoffice
-			mysql-workbench
 			gnome-keyring
-# sqlite
 			droidcam
 			direnv
 			ollama
 			fastfetch
 			gimp
-			vlc
 			obs-studio
 			killall
 			fzf
