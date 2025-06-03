@@ -145,6 +145,7 @@
 			golangci-lint
 			gomodifytags
 			impl
+			delve #debugger
 
 # LSPs
 			lua-language-server
@@ -168,7 +169,8 @@
 			maven
 
 # sqlite
-# mysql-workbench
+			mysql-workbench
+			postgresql
 			mpc
 			mpd
 			screenkey
@@ -215,6 +217,9 @@
 	services.mysql = {
 		enable = true;
 		package = pkgs.mariadb;
+	};
+	services.postgresql = {
+		enable = true;
 	};
 
 	programs.nix-ld.enable = true;
