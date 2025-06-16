@@ -160,7 +160,7 @@
 			rmpc
 			ncmpcpp
 			spotify
-# vlc
+			# vlc
 
 			jdk17
 			python3
@@ -168,9 +168,8 @@
 			go
 			maven
 
-# sqlite
-			mysql-workbench
-			postgresql
+			# sqlite
+			# mysql-workbench
 			mpc
 			mpd
 			screenkey
@@ -217,9 +216,6 @@
 	services.mysql = {
 		enable = true;
 		package = pkgs.mariadb;
-	};
-	services.postgresql = {
-		enable = true;
 	};
 
 	programs.nix-ld.enable = true;
