@@ -1,14 +1,10 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, inputs, ... }:
 
 {
 	imports =
-		[ # Include the results of the hardware scan.
+		[
 		./hardware-configuration.nix
-# ./hardware-acceleration.nix
+			# ./hardware-acceleration.nix
 			../i3wm/i3.nix
 			inputs.home-manager.nixosModules.default
 		];
@@ -27,7 +23,7 @@
 		'';
 
 
-	networking.hostName = "nixos"; # Define your hostname.
+	networking.hostName = "nixos";
 # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
 		nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -39,12 +35,8 @@
 # Enable networking
 	networking.networkmanager.enable = true;
 
-# Set your time zone.
 	time.timeZone = "Asia/Kolkata";
-
-# Select internationalisation properties.
 	i18n.defaultLocale = "en_IN";
-
 	i18n.extraLocaleSettings = {
 		LANG = "en_US.UTF-8";
 		LC_ADDRESS = "en_IN";
@@ -58,18 +50,10 @@
 		LC_TIME = "en_IN";
 	};
 
-# Enable the X11 windowing system.
-	services.xserver.enable = true;
 
 # Enable the GNOME Desktop Environment.
 # services.xserver.displayManager.gdm.enable = true;
 # services.xserver.desktopManager.gnome.enable = true;
-
-# Configure keymap in X11
-	services.xserver.xkb = {
-		layout = "us";
-		variant = "";
-	};
 
 # Enable CUPS to print documents.
 	services.printing.enable = true;
@@ -97,7 +81,6 @@
 # Enable touchpad support (enabled default in most desktopManager).
 # services.xserver.libinput.enable = true;
 
-# Define a user account. Don't forget to set a password with ‘passwd’.
 	programs.zsh.enable = true;
 	users.users.khush = {
 		isNormalUser = true;
@@ -109,14 +92,9 @@
 		];
 	};
 
-# Install firefox.
-	programs.firefox.enable = true;
 
-# Allow unfree packages
 	nixpkgs.config.allowUnfree = true;
 
-# List packages installed in system profile. To search, run:
-# $ nix search wget
 	environment.systemPackages = with pkgs; [
 		home-manager
 
@@ -152,15 +130,20 @@
 			jdt-language-server
 			gopls
 
-			discord
+# Browsers
 			google-chrome
 			brave
-			postman
+
+# Music Players
+			spotify
 			strawberry
+			# vlc
+
+# Terminal Music Players	
 			rmpc
 			ncmpcpp
-			spotify
-			# vlc
+			mpc # dependency - Music Player Client
+			mpd # dependency - Music Player Daemon
 
 			jdk17
 			python3
@@ -168,57 +151,68 @@
 			go
 			maven
 
-			# sqlite
-			# mysql-workbench
-			mpc
-			mpd
-			screenkey
-			hyperfine
-			flameshot
-			libreoffice
-			gnome-keyring
-			droidcam
+# utils
+			zip
+			unzip
+			discord
 			direnv
-			ollama
-			fastfetch
-			gimp
-			obs-studio
-			killall
-			fzf
-			btop
-			xcape
-			ripgrep
-			fd
-			gh
-			ffmpeg-full
-			redshift
+			libreoffice # word of linux
+			oh-my-posh # for the terminal line
+			appimage-run # for extracting appimage files
+			screenkey # for screencasting keyboard presses on screen
+			flameshot # screenshot tool
+			droidcam # webcam
+			ffmpeg-full # ffmpeg for video and audio processing because why not?
+			redshift # to save my eyes at night
+			bc # basic calculation (required for polybar)
+			pavucontrol # for audio stuff
+			ripgrep # required for nvim
+			fd # required for nvim (optional)
+			gimp # for drawing stuff
+			obs-studio # for recording
+			fzf # for fuzzy searching
+			btop # for system usage
+			postman # for api testing
+			hyperfine # for testing
+			ollama # for installing llm locally
+			fastfetch # for showoff system
+			killall # for keyboard remapping
+			xcape # for keyboard remapping
+
+# for connecting iphone
 			ifuse
 			usbmuxd
 			libimobiledevice
-			bc
-			pavucontrol
-			dconf
-			zip
-			unzip
-			font-awesome
-			oh-my-posh
-			appimage-run
+
+# xorg stuff
 			xorg.xhost
 			xorg.xinput
 			xorg.libX11
+
+			# font-awesome
+			# gh
+			# sqlite
+			# mysql-workbench
+			# gnome-keyring
+			# dconf
 			];
 
+	services.xserver.enable = true;
+	services.xserver.xkb = {
+		layout = "us";
+		variant = "";
+	};
 	services.ollama = {
 		enable = true;
 	};
 	services.usbmuxd.enable = true;
-
 	services.mysql = {
 		enable = true;
 		package = pkgs.mariadb;
 	};
 
 	programs.nix-ld.enable = true;
+	programs.firefox.enable = true;
 
 	home-manager = {
 		extraSpecialArgs = { inherit inputs;  };
