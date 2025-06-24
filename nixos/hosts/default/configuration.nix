@@ -85,7 +85,7 @@
 	users.users.khush = {
 		isNormalUser = true;
 		description = "Khush Patibandha";
-		extraGroups = [ "networkmanager" "wheel" "input" ];
+		extraGroups = [ "networkmanager" "wheel" "input" "docker" ];
 		shell = pkgs.zsh;
 		packages = with pkgs; [
 #  thunderbird
@@ -156,6 +156,8 @@
 			unzip
 			discord
 			direnv
+			dconf
+			baobab
 			libreoffice # word of linux
 			oh-my-posh # for the terminal line
 			appimage-run # for extracting appimage files
@@ -194,7 +196,6 @@
 			# sqlite
 			# mysql-workbench
 			# gnome-keyring
-			# dconf
 			];
 
 	services.xserver.enable = true;
@@ -206,6 +207,7 @@
 		enable = true;
 	};
 	services.usbmuxd.enable = true;
+	services.openssh.enable = true;
 	services.mysql = {
 		enable = true;
 		package = pkgs.mariadb;
@@ -213,6 +215,8 @@
 
 	programs.nix-ld.enable = true;
 	programs.firefox.enable = true;
+
+	virtualisation.docker.enable = true;
 
 	home-manager = {
 		extraSpecialArgs = { inherit inputs;  };
@@ -228,11 +232,6 @@
 #   enable = true;
 #   enableSSHSupport = true;
 # };
-
-# List services that you want to enable:
-
-# Enable the OpenSSH daemon.
-# services.openssh.enable = true;
 
 # Open ports in the firewall.
 # networking.firewall.allowedTCPPorts = [ ... ];

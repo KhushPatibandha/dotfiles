@@ -13,9 +13,9 @@ theme = gruber-darker
 
 
 font-size = 12
-font-family = JetBrainsMono NF ExtraBold
-# font-family = Iosevka Extrabold
-# font-family = Iosevka
+# font-family = JetBrainsMono NF ExtraBold
+font-family = Iosevka NF ExtraBold
+# font-family = Iosevka NF
 
 clipboard-read = allow
 clipboard-write = allow
