@@ -128,6 +128,7 @@
 # LSPs
 			lua-language-server
 			jdt-language-server
+			haskell-language-server
 			gopls
 
 # Browsers
@@ -149,6 +150,7 @@
 			python3
 			nodejs_20
 			go
+			ghc
 			maven
 
 # utils
