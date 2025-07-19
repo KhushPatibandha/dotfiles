@@ -159,6 +159,8 @@
 			discord
 			direnv
 			dconf
+			gemini-cli
+			stremio
 			baobab # for showing disk storage
 			libreoffice # word of linux
 			oh-my-posh # for the terminal line
