@@ -6,7 +6,7 @@ max_brightness=$(brightnessctl max)
 percentage=$(echo "scale=0; ($brightness*100)/$max_brightness" | bc)
 
 # Format output based on brightness
-output=": ${percentage}%"
+output=" : ${percentage}%"
 
 echo "$output"
 

@@ -25,4 +25,4 @@ mouse-hide-while-typing = true
 clipboard-trim-trailing-spaces = true
 clipboard-paste-protection = false
 
-background-opacity = 0.8
+# background-opacity = 0.8
