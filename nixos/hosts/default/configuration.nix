@@ -160,7 +160,7 @@
 			direnv
 			dconf
 			gemini-cli
-			stremio
+			stremio # watching movies
 			baobab # for showing disk storage
 			libreoffice # word of linux
 			oh-my-posh # for the terminal line
@@ -215,6 +215,7 @@
 	services.mysql = {
 		enable = true;
 		package = pkgs.mariadb;
+		settings.mysqld.port = 3306;
 	};
 
 	programs.nix-ld.enable = true;
