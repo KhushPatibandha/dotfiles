@@ -28,7 +28,7 @@
 			theme = "robbyrussell";
 		};
 		initContent = ''
-			eval "$(oh-my-posh init zsh --config ~/oh-my-posh.omp.json)"
+			eval "$(oh-my-posh init zsh --config ~/.dotfiles/oh-my-posh/oh-my-posh.toml)"
 			export EDITOR=nvim
 			alias gits='git status'
 			alias gita='git add'
