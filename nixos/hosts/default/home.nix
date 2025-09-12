@@ -57,6 +57,12 @@
 			'';
 	};
 
+	programs.carapace = {
+		enable = true;
+		enableZshIntegration = true;
+		package = pkgs.carapace;
+	};
+
 	services.mpd = {
 		enable = true;
 		musicDirectory = "/home/khush/Music/basicallyMyMusicTaste";

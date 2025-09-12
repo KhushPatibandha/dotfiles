@@ -155,12 +155,13 @@
 			maven
 
 # utils
-			zip
-			unzip
-			discord
 			direnv
 			dconf
-			gemini-cli
+			zip # zip
+			unzip # unzip
+			discord # discord
+			gemini-cli # terminal ai interface
+			yazi # terminal file manager
 			stremio # watching movies
 			baobab # for showing disk storage
 			libreoffice # word of linux
@@ -207,9 +208,6 @@
 	services.xserver.xkb = {
 		layout = "us";
 		variant = "";
-	};
-	services.ollama = {
-		enable = true;
 	};
 	services.usbmuxd.enable = true;
 	services.openssh.enable = true;
