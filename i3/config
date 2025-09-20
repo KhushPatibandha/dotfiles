@@ -214,7 +214,7 @@ bindsym $mod+shift+x exec i3lock && systemctl suspend
 
 # Wallpaper
 # exec_always feh --bg-scale ~/.config/i3/Wallpapers/levi2.jpg
-exec_always feh --bg-scale ~/.config/i3/Wallpapers/ryuk4.jpg
+exec_always feh --bg-fill ~/.config/i3/Wallpapers/lcdRainbowDark.jxl
 
 # Compositor
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
@@ -226,5 +226,6 @@ bindsym Shift+Print exec flameshot screen
 # bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date).png"
 # bindsym Shift+Print exec --no-startup-id maim -o --select "/home/$USER/Pictures/Screenshots/$(date).png"
 
-# for_window [class="com.mitchellh.ghostty"] border normal
-for_window [class="^.*"] border normal
+# for_window [class="^.*"] border normal
+
+exec --no-startup-id /run/current-system/sw/bin/csd-xsettings

@@ -30,6 +30,10 @@
 		initContent = ''
 			eval "$(oh-my-posh init zsh --config ~/.dotfiles/oh-my-posh/oh-my-posh.toml)"
 			export EDITOR=nvim
+			export GTK_THEME=Adwaita:dark
+			export QT_STYLE_OVERRIDE=Adwaita:dark
+			export GTK3_RC_FILES=~/.config/gtk-3.0/settings.ini
+			export QT_QPA_PLATFORMTHEME=gtk3
 			alias gits='git status'
 			alias gita='git add'
 			alias gitc='git commit -m'

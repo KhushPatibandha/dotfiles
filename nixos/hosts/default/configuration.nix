@@ -52,8 +52,8 @@
 
 
 # Enable the GNOME Desktop Environment.
-# services.displayManager.gdm.enable = true;
-# services.desktopManager.gnome.enable = true;
+services.displayManager.gdm.enable = true;
+services.desktopManager.gnome.enable = true;
 
 # Enable CUPS to print documents.
 	services.printing.enable = true;
@@ -70,9 +70,7 @@
 		alsa.enable = true;
 		alsa.support32Bit = true;
 		pulse.enable = true;
-# If you want to use JACK applications, uncomment this
-#jack.enable = true;
-
+		jack.enable = true;
 # use the example session manager (no others are packaged yet so this is enabled by default,
 # no need to redefine it in your config for now)
 #media-session.enable = true;
@@ -162,7 +160,7 @@
 			discord # discord
 			gemini-cli # terminal ai interface
 			yazi # terminal file manager
-			stremio # watching movies
+			# stremio # watching movies
 			baobab # for showing disk storage
 			libreoffice # word of linux
 			oh-my-posh # for the terminal line
@@ -186,6 +184,10 @@
 			fastfetch # for showoff system
 			killall # for keyboard remapping
 			xcape # for keyboard remapping
+			xsettingsd
+			cinnamon-settings-daemon
+			gnome-tweaks
+			libsForQt5.qt5ct
 
 # for connecting iphone
 			ifuse
