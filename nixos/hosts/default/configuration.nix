@@ -130,7 +130,6 @@ services.desktopManager.gnome.enable = true;
 			gopls
 
 # Browsers
-			google-chrome
 			brave
 
 # Music Players
@@ -155,6 +154,7 @@ services.desktopManager.gnome.enable = true;
 # utils
 			direnv
 			dconf
+			upscayl
 			zip # zip
 			unzip # unzip
 			discord # discord

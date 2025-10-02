@@ -11,5 +11,4 @@ gnome-keyring-daemon --start;
 
 export GTK_THEME=Adwaita:dark
 export QT_STYLE_OVERRIDE=Adwaita:dark
-export GTK3_RC_FILES=~/.config/gtk-3.0/settings.ini
 export QT_QPA_PLATFORMTHEME=gtk3

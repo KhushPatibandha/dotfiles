@@ -214,7 +214,7 @@ bindsym $mod+shift+x exec i3lock && systemctl suspend
 
 # Wallpaper
 # exec_always feh --bg-scale ~/.config/i3/Wallpapers/levi2.jpg
-exec_always feh --bg-fill ~/.config/i3/Wallpapers/lcdRainbowDark.jxl
+exec_always feh --bg-fill ~/.config/i3/Wallpapers/ryuk2.png
 
 # Compositor
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf

@@ -1,3 +1,4 @@
+shell-integration = zsh
 gtk-titlebar = false
 window-decoration = server
 
@@ -8,8 +9,8 @@ shell-integration-features = no-cursor
 # theme = Dracula
 # theme = Gruvbox Dark Hard
 # theme = Gruvbox Light
-theme = Gruber Darker
-# theme = Rose Pine Moon
+# theme = Gruber Darker
+theme = Kanagawabones
 
 font-size = 12
 # font-family = JetBrainsMono NF ExtraBold

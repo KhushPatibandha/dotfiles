@@ -1,6 +1,7 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
+	imports = [ inputs.zen-browser.homeModules.twilight ];
 	home.username = "khush";
 	home.homeDirectory = "/home/khush";
 
@@ -32,7 +33,6 @@
 			export EDITOR=nvim
 			export GTK_THEME=Adwaita:dark
 			export QT_STYLE_OVERRIDE=Adwaita:dark
-			export GTK3_RC_FILES=~/.config/gtk-3.0/settings.ini
 			export QT_QPA_PLATFORMTHEME=gtk3
 			alias gits='git status'
 			alias gita='git add'
@@ -65,6 +65,10 @@
 		enable = true;
 		enableZshIntegration = true;
 		package = pkgs.carapace;
+	};
+
+	programs.zen-browser = {
+		enable = true;
 	};
 
 	services.mpd = {
