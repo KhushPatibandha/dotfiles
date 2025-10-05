@@ -1,5 +1,6 @@
 shell-integration = zsh
 gtk-titlebar = false
+gtk-single-instance = false
 window-decoration = server
 
 cursor-style = block

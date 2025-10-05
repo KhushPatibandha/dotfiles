@@ -146,7 +146,7 @@ services.desktopManager.gnome.enable = true;
 
 			jdk17
 			python3
-			nodejs_20
+			nodejs_24
 			go
 			ghc
 			maven
