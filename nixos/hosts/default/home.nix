@@ -1,7 +1,6 @@
 { inputs, config, pkgs, ... }:
 
 {
-	imports = [ inputs.zen-browser.homeModules.twilight ];
 	home.username = "khush";
 	home.homeDirectory = "/home/khush";
 
@@ -65,10 +64,6 @@
 		enable = true;
 		enableZshIntegration = true;
 		package = pkgs.carapace;
-	};
-
-	programs.zen-browser = {
-		enable = true;
 	};
 
 	services.mpd = {

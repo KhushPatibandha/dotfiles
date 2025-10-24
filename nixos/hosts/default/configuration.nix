@@ -158,7 +158,6 @@ services.desktopManager.gnome.enable = true;
 			zip # zip
 			unzip # unzip
 			discord # discord
-			gemini-cli # terminal ai interface
 			yazi # terminal file manager
 			# stremio # watching movies
 			baobab # for showing disk storage
