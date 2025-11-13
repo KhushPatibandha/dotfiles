@@ -57,6 +57,8 @@
 			killall xcape
 			xcape  -e 'Caps_Lock=Escape'
 			source <(fzf --zsh)
+
+			~/.dotfiles/krabby random --no-title
 			'';
 	};
 
