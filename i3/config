@@ -229,3 +229,5 @@ bindsym Shift+Print exec flameshot screen
 # for_window [class="^.*"] border normal
 
 exec --no-startup-id /run/current-system/sw/bin/csd-xsettings
+
+exec_always ~/.dotfiles/xrandrScripts/homeMonitor.sh
