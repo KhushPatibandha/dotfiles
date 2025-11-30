@@ -6,7 +6,7 @@
         windowManager.i3.enable = true;
 
         windowManager.i3 = {
-            package = pkgs.i3-gaps;
+            package = pkgs.i3;
             extraPackages = with pkgs; [
                 xfce.thunar #file manager
                 autotiling #auto tiling
