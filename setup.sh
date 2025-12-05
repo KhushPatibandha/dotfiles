@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
 ln -sf ~/.dotfiles/ghostty/ ~/.config/ghostty
 ln -sf ~/.dotfiles/i3/ ~/.config/i3
