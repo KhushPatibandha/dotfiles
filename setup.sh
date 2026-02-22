@@ -8,3 +8,4 @@ ln -sf ~/.dotfiles/polybar ~/.config/polybar
 ln -sf ~/.dotfiles/nixos/ /etc/nixos
 ln -sf ~/.dotfiles/.xprofile ~/.xprofile
 ln -sf ~/.dotfiles/screenkey/screenkey.json ~/.config/screenkey.json
+ln -sf ~/.dotfiles/aerospace ~/.config/aerospace
