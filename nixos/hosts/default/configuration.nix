@@ -102,6 +102,7 @@
         vim
         neovim
         git
+        gh
         gcc
 
         # c/cpp
@@ -199,7 +200,6 @@
         xorg.libX11
 
         # font-awesome
-        # gh
         # sqlite
         # mysql-workbench
         # gnome-keyring
