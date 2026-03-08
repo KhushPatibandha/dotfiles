@@ -1,10 +1,10 @@
 #!/bin/sh
 
-ln -sf ~/.dotfiles/nvim ~/.config/nvim
-ln -sf ~/.dotfiles/ghostty/ ~/.config/ghostty
-ln -sf ~/.dotfiles/i3/ ~/.config/i3
-ln -sf ~/.dotfiles/picom/ ~/.config/picom
-ln -sf ~/.dotfiles/polybar ~/.config/polybar
-ln -sf ~/.dotfiles/nixos/ /etc/nixos
-ln -sf ~/.dotfiles/.xprofile ~/.xprofile
-ln -sf ~/.dotfiles/screenkey/screenkey.json ~/.config/screenkey.json
+ln -sfn /home/khush/.dotfiles/nvim /home/khush/.config/nvim
+ln -sfn /home/khush/.dotfiles/ghostty/ /home/khush/.config/ghostty
+ln -sfn /home/khush/.dotfiles/i3/ /home/khush/.config/i3
+ln -sfn /home/khush/.dotfiles/picom/ /home/khush/.config/picom
+ln -sfn /home/khush/.dotfiles/polybar /home/khush/.config/polybar
+ln -sfn /home/khush/.dotfiles/nixos/ /etc/nixos
+ln -sfn /home/khush/.dotfiles/.xprofile /home/khush/.xprofile
+ln -sfn /home/khush/.dotfiles/screenkey/screenkey.json /home/khush/.config/screenkey.json
