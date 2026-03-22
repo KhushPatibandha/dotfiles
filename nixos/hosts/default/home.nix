@@ -53,6 +53,16 @@
             bindkey -s '^F' 'fzf\n'
             bindkey -s '^O' 'fzf | xargs nvim\n'
 
+            showdiffall() {
+                git diff --name-only HEAD --relative | xargs -r nvim
+            }
+            showdiffstaged() {
+                git diff --name-only --cached --relative | xargs -r nvim
+            }
+            showdiff() {
+                git diff --name-only --relative | xargs -r nvim
+            }
+
             setxkbmap -option caps:ctrl_modifier -option grp:shifts_toggle
             killall xcape
             xcape  -e 'Caps_Lock=Escape'

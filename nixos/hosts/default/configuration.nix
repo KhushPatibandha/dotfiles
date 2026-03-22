@@ -223,6 +223,8 @@
 
     virtualisation.docker.enable = true;
 
+    hardware.keyboard.qmk.enable = true;
+
     home-manager = {
         extraSpecialArgs = { inherit inputs;  };
         users = {
