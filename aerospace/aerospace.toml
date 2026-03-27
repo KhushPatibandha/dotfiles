@@ -116,5 +116,5 @@ on-mode-changed = []
     alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
-    if.app-name-regex-substring = '(?i)finder|camera|slack|notes|spotify'
+    if.app-name-regex-substring = '(?i)finder|camera|spotify'
     run = 'layout floating'
