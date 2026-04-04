@@ -8,3 +8,4 @@ ln -sfn /home/khush/.dotfiles/polybar /home/khush/.config/polybar
 ln -sfn /home/khush/.dotfiles/nixos/ /etc/nixos
 ln -sfn /home/khush/.dotfiles/.xprofile /home/khush/.xprofile
 ln -sfn /home/khush/.dotfiles/screenkey/screenkey.json /home/khush/.config/screenkey.json
+ln -sfn /home/khush/.dotfiles/aerospace/aerospace.toml /home/khush/.config/aerospace/aerospace.toml
