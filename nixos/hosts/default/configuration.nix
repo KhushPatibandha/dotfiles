@@ -135,7 +135,7 @@
 
         # Music Players
         spotify
-        youtube-music
+        pear-desktop
         strawberry
         # vlc
 
@@ -184,6 +184,8 @@
         fastfetch # for showoff system
         killall # for keyboard remapping
         xcape # for keyboard remapping
+        mesa
+        libGL
         xsettingsd
         cinnamon-settings-daemon
         gnome-tweaks
@@ -195,9 +197,9 @@
         libimobiledevice
 
         # xorg stuff
-        xorg.xhost
-        xorg.xinput
-        xorg.libX11
+        xhost
+        xinput
+        libX11
 
         # font-awesome
         # sqlite

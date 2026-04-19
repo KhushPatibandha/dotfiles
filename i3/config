@@ -221,6 +221,7 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # Screenshots
 bindsym Print exec flameshot gui -d 0
+bindsym $mod+Shift+s exec flameshot gui -d 0
 bindsym Shift+Print exec flameshot screen
 # bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/Screenshots/$(date).png"
 # bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshots/$(date).png"

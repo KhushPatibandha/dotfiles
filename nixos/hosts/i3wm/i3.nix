@@ -8,7 +8,7 @@
         windowManager.i3 = {
             package = pkgs.i3;
             extraPackages = with pkgs; [
-                xfce.thunar #file manager
+                thunar #file manager
                 autotiling #auto tiling
                 rofi #application launche
                 i3lock #default i3 screen locker
