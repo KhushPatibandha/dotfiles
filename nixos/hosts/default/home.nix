@@ -30,9 +30,11 @@
         initContent = ''
             eval "$(oh-my-posh init zsh --config ~/.dotfiles/oh-my-posh/oh-my-posh.toml)"
             export EDITOR=nvim
+            export PATH="$PATH:$(go env GOPATH)/bin"
             export GTK_THEME=Adwaita:dark
             export QT_STYLE_OVERRIDE=Adwaita:dark
             export QT_QPA_PLATFORMTHEME=gtk3
+            xset r rate 350 35
             alias gits='git status'
             alias gita='git add'
             alias gitc='git commit -m'
@@ -45,6 +47,7 @@
             alias gitsth='git stash'
             alias gitsthp='git stash pop'
             alias gitd='git diff'
+            alias gitdiff='git diff'
             alias gitl='git log'
             alias gitsh='git show'
             alias got='go test'

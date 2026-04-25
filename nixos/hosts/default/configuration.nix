@@ -149,6 +149,7 @@
         python3
         nodejs_24
         go
+        protobuf
         ghc
         maven
 
