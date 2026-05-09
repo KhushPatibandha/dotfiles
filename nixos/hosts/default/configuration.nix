@@ -152,8 +152,11 @@
         protobuf
         ghc
         maven
+        gnumake
 
         # utils
+        unrar
+        kicad
         direnv
         dconf
         upscayl
