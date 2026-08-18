@@ -17,9 +17,22 @@
             system = "x86_64-linux";
             pkgs = nixpkgs.legacyPackages.${system};
         in 
-            {
-            nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-                specialArgs = {inherit inputs;};
+        {
+            nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
+                specialArgs = {
+                    inherit inputs;
+                    host = "pc";
+                };
+                modules = [
+                    ./hosts/default/configuration.nix
+                ];
+            };
+
+            nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+                specialArgs = {
+                    inherit inputs;
+                    host = "laptop";
+                };
                 modules = [
                     ./hosts/default/configuration.nix
                 ];

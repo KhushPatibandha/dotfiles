@@ -1,9 +1,11 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, host, ... }:
 
 {
     imports =
         [
-            ./hardware-configuration.nix
+            (if host == "pc"
+                then ./pc/hardware-configuration.nix
+                else ./laptop/hardware-configuration.nix)
             # ./hardware-acceleration.nix
             ../i3wm/i3.nix
             inputs.home-manager.nixosModules.default
