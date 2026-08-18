@@ -13,11 +13,12 @@ shell-integration-features = no-cursor
 # theme = Gruvbox Light
 theme = Gruber Darker
 # theme = Kanagawabones
+# theme = IBM 5153 CGA (Black)
 
-font-size = 11
-# font-family = JetBrainsMono NF ExtraBold
+font-size = 12
+font-family = JetBrainsMono NF Bold
 # font-family = Iosevka NF ExtraBold
-font-family = Iosevka NF
+# font-family = Iosevka NF
 
 clipboard-read = allow
 clipboard-write = allow

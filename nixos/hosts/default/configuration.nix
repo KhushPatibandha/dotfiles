@@ -98,6 +98,8 @@
 
         ghostty
 
+        inputs.claude-code.packages.${pkgs.system}.default
+
         tmux
         vim
         neovim
@@ -139,7 +141,7 @@
         strawberry
         # vlc
 
-        # Terminal Music Players	
+        # Terminal Music Players
         rmpc
         ncmpcpp
         mpc # dependency - Music Player Client
@@ -160,6 +162,10 @@
         direnv
         dconf
         upscayl
+        podman-desktop
+        postgresql
+        sqlite
+        dbeaver-bin
         zip # zip
         unzip # unzip
         discord # discord
@@ -206,7 +212,6 @@
         libX11
 
         # font-awesome
-        # sqlite
         # mysql-workbench
         # gnome-keyring
     ];
